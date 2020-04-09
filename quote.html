@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quote</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class="quote-container">
+	<a href="index.php"><p class="back-position">Go Back</p></a>
+<div class="quote-text-align">
+<h1>Cargo information</h1><div class="textbox-position">
+Pieces: <input type="text"	 placeholder="Enter pieces here..." class="quote-textbox"></br>
+Weight: <input type="text" placeholder="Enter weight here..." class="quote-textbox"><br>
+Cargo Description: <input type="text" name="wgt" placeholder="Enter weight here..." class="quote-textbox">
+</div><br>
+<label for="service"><h4>Select location of service </h4></label><br>
+<select name="service" id="service" required>
+<option value="2000" selected>Luzon</option>
+<option value="3000" >Visayas</option>
+<option value="4000" >Mindanao</option>
+</select>
+ <p id="price" class="price-service"></p>
+  
+
+</div>
+</div>
+<script>
+var drop = document.getElementById("service");
+var price = document.getElementById("price");
+drop.onchange = function() {
+price.innerHTML = "Total: $ " + drop.value;
+}
+</script>
+
+</body>
+</html>

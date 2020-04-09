@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header class="header-size"><nav>
+		<li><a class="navbar" href="index.php">Home</a></li>
+		<li><a class="navbar" href="service.html">Service</a></li>
+		<li><a class="navbar" href="contact.html">Contact</a></li>
+	</nav></header>
+		<ul>
+			<li class="sidebar fixed-mail ">
+				<a href="#email-container"><img class="sidebar-icon animate-right" src="images/email-link.png"></a>
+			</li>
+			<li class="sidebar fixed-phone">
+				<a href="#phone-container"><img class="sidebar-icon animate-right" src="images/phone-link.png"></a>
+			</li>
+
+			<li class="sidebar fixed-comment">
+				<a href="#comment-container"><img class="sidebar-icon animate-right" src="images/comment-link.png"></a>
+			</li>
+		</ul>
+<form action="#">
+	<div id="comment-container">
+		<fieldset class="fieldset-box"><legend><img class="fieldset-icon" src="images/email.jpg"></legend>
+			<input class="comment-textbox" type="text" placeholder="Enter your name..."><br>
+			<input class="comment-textbox" type="email" placeholder="Enter your email address..."><br>
+			<textarea class="comment-box" type="text" placeholder="Enter comment here..."></textarea> <br><br><br><br><br>
+			<button class="cmt-btn" onclick="myFunction()">Submit</button>
+		</fieldset>
+	</div>
+</form>
+	<div id="phone-container">
+		<div class="contactform">
+			<h1>Office number: 777-777-7777</h1>
+		</div>
+	</div>
+		
+	<div id="email-container">
+		<div class="contactform">
+			<p>Email us @ <a href="mailto:wwww@wwww.com" style="color:dodgerblue;">wwww@wwww.com</a></p>
+			
+		</div>
+	</div>
+	<script>
+	function myFunction(){
+    if(!alert("Submitted! Thank you!")){location.reload();}}
+
+</script>
+</body>
+</html>
